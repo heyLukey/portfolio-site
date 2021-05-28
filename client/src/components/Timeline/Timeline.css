@@ -53,6 +53,21 @@
   border: none;
 }
 
+.vertical-timeline--animate .vertical-timeline-element-content.bounce-in {
+  -webkit-animation: unset;
+  animation: unset;
+}
+
+.vertical-timeline--two-columns.vertical-timeline--animate
+  .vertical-timeline-element.vertical-timeline-element--right
+  .vertical-timeline-element-content.bounce-in,
+.vertical-timeline--two-columns.vertical-timeline--animate
+  .vertical-timeline-element:nth-child(even):not(.vertical-timeline-element--left)
+  .vertical-timeline-element-content.bounce-in {
+  -webkit-animation: unset;
+  animation: unset;
+}
+
 .icon-container {
   height: 100%;
   display: flex;
