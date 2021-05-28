@@ -1,0 +1,141 @@
+.contact-modal-overlay {
+  z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-modal-background {
+  position: absolute;
+  height: 600px;
+  width: 1000px;
+  overflow: auto;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transform: translateX(-200px);
+  transition: all 250ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+}
+
+.left-side {
+  padding-left: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: var(--color-primary);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.right-side {
+  background: var(--my-orange);
+  position: relative;
+}
+
+.close-container {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: unset;
+  border: unset;
+  right: 10px;
+  top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999999999;
+}
+
+.fa-times-circle {
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.fa-times-circle:hover {
+  color: #212529;
+}
+
+::-webkit-input-placeholder {
+  color: #fff;
+}
+::-moz-placeholder {
+  color: #fff;
+}
+
+.contact-email,
+.contact-phone,
+.contact-linkedin {
+  padding-top: 50px;
+}
+
+.fa-envelope-open-text,
+.fa-phone-alt,
+.fa-linkedin-in {
+  padding-right: 20px;
+}
+
+@media screen and (max-width: 1250px) {
+  .contact-modal-background {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .left-side {
+    padding-left: 40px;
+  }
+
+  .left-title h2 {
+    font-size: 22px;
+  }
+  .left-title h4 {
+    font-size: 14px;
+  }
+
+  .contact-email,
+  .contact-phone,
+  .contact-linkedin {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .contact-modal-background {
+    overflow: visible;
+    height: 80%;
+  }
+
+  .left-side {
+    display: none;
+  }
+
+  .right-side {
+    height: 100%;
+    border-radius: 5px;
+  }
+
+  .contact-modal-background {
+    display: block;
+    grid-template-columns: unset;
+    grid-template-rows: unset;
+  }
+}

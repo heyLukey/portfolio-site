@@ -1,0 +1,14 @@
+.contact-btn {
+  padding: 0px 12px 0px 12px;
+  height: 35px;
+  color: #ff928b;
+  background: transparent;
+  border: 2px solid #ff928b;
+  transition: 200ms;
+  cursor: pointer;
+}
+
+.contact-btn:hover {
+  color: var(--color-primary);
+  background: var(--my-orange);
+}

@@ -1,0 +1,63 @@
+header {
+  padding-top: 100px;
+  height: calc(20vh + 100px);
+  width: 100%;
+  background-color: var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-title {
+  font-size: 2rem;
+  text-align: center;
+  background: var(--my-orange);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-right: 15px;
+  padding-left: 15px;
+  z-index: 5;
+}
+
+.header-desc {
+  text-align: center;
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  font-size: 1.25rem;
+  font-weight: normal;
+  z-index: 5;
+  text-shadow: 0.05em 0 var(--color-primary), 0 0.05em var(--color-primary),
+    -0.05em 0 var(--color-primary), 0 -0.05em var(--color-primary),
+    -0.05em -0.05em var(--color-primary), -0.05em 0.05em var(--color-primary),
+    0.05em -0.05em var(--color-primary), 0.05em 0.05em var(--color-primary);
+}
+
+.landing {
+  height: calc(80vh - 100px);
+  background-color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.landing-image {
+  height: 100%;
+  width: 100%;
+  object-fit: scale-down;
+  color: var(--color-primary);
+}
+
+@media screen and (max-width: 954px) {
+  .landing-image {
+    object-fit: cover;
+  }
+}

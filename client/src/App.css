@@ -1,0 +1,42 @@
+:root {
+  --color-primary: #fff;
+  --color-secondary: #e8ecef;
+  --color-error: #c22f2f;
+  --color-text: #212529;
+  --color-focus: #21252980;
+  --my-orange: linear-gradient(315deg, #ffac81 0%, #ff928b 74%);
+  --my-green: #8cc08b;
+  --my-purple: #78c9db;
+  --my-yellow: #eccf64;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans JP", sans-serif;
+  color: var(--color-text);
+  transition: background-color 0.25s;
+  transition-timing-function: ease-out;
+}
+
+a {
+  color: unset;
+  text-decoration: unset;
+}
+
+ul {
+  list-style: none;
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+button:focus,
+input:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 3pt 1pt var(--color-focus);
+}

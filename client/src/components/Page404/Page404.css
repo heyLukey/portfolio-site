@@ -1,0 +1,24 @@
+#page-404 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary);
+  height: 100vh;
+  padding-bottom: 56px;
+}
+
+#page-404 h1 {
+  display: block;
+  font-size: 15rem;
+}
+
+@media screen and (max-width: 500px) {
+  #page-404 h1 {
+    font-size: 7.5rem;
+  }
+
+  #page-404 h4 {
+    font-size: 0.75rem;
+  }
+}

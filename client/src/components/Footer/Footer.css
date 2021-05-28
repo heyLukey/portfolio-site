@@ -1,0 +1,114 @@
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary);
+}
+
+#footer-content {
+  width: 80%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+
+#footer-tl {
+  font-size: 12px;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+  border-right: var(--color-text) solid 1px;
+}
+
+#footer-tr {
+  font-size: 12px;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 10px;
+}
+
+#footer-bl {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#footer-br {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+#footer-br a,
+#footer-bl a {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#github:hover {
+  color: #afb2b4;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+#github:focus {
+  outline: none;
+  color: #afb2b4;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+
+#gmail:hover {
+  color: #db4437;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+#gmail:focus {
+  outline: none;
+  color: #db4437;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+
+#twitter:hover {
+  color: #1da1f2;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+#twitter:focus {
+  outline: none;
+  color: #1da1f2;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+
+#linkedin:hover {
+  color: #0e76a8;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+#linkedin:focus {
+  outline: none;
+  color: #0e76a8;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
+
+footer .fab,
+footer .fas {
+  color: inherit;
+}
+
+@media screen and (max-width: 375px) {
+  #footer-tl {
+    font-size: 8px;
+  }
+
+  #footer-tr {
+    font-size: 8px;
+  }
+}

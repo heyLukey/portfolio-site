@@ -1,0 +1,141 @@
+.projects-background {
+  width: 100%;
+  background-color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.projects-container {
+  width: 80%;
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 50px;
+}
+
+.projects-title {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.projects-title h1 {
+  color: var(--my-yellow);
+}
+
+.projects-title h4 {
+  padding-top: 10px;
+}
+
+.thumbnail-container {
+  height: 100%;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-rows: minmax(0, 1fr) minmax(0, 1fr);
+}
+
+.project-image-container {
+  background: unset;
+  border: unset;
+  border-radius: 20px;
+  height: 300px;
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+}
+
+.project-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  border-radius: inherit;
+  border: 1px solid black;
+  display: block;
+  position: relative;
+}
+
+.project-text-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.project-text {
+  color: white;
+  text-shadow: 0.05em 0 #212529, 0 0.05em #212529, -0.05em 0 #212529,
+    0 -0.05em #212529, -0.05em -0.05em #212529, -0.05em 0.05em #212529,
+    0.05em -0.05em #212529, 0.05em 0.05em #212529;
+  font-size: 36px;
+  font-weight: bold;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.project-image-container:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: inherit;
+  opacity: 0;
+  border: 1px solid black;
+  transition: 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay-text {
+  position: absolute;
+  height: 80%;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.overlay-text p {
+  margin-bottom: 10px;
+  color: white;
+}
+
+@media screen and (max-width: 900px) {
+  .projects-container {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .thumbnail-container {
+    grid-template-columns: unset;
+    grid-template-rows: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) minmax(
+        0,
+        1fr
+      );
+  }
+}
