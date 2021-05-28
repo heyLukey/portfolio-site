@@ -16,6 +16,8 @@ const sendEmail = async (subject, text, nodemailer) => {
 
   transporter.sendMail(mailOptions, (data) => {
     console.log(mailOptions);
+    console.log(subject);
+    console.log(text);
     console.log("Email sent!");
   });
 
