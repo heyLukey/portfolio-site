@@ -101,3 +101,15 @@
     display: none;
   }
 }
+
+@media screen and (max-height: 450px) {
+  .form-contact {
+    justify-content: space-between;
+  }
+  #subject {
+    height: 27.55px;
+  }
+  .submit-btn {
+    height: 27.55px;
+  }
+}

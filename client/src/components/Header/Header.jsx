@@ -24,7 +24,7 @@ const Header = () => {
           <img
             className="landing-image"
             src={process.env.PUBLIC_URL + "/images/sapiens.png"}
-            alt="landing"
+            alt=""
           />
         </div>
       </div>

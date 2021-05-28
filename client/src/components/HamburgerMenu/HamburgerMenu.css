@@ -8,6 +8,8 @@
   width: 0;
   background: var(--color-primary);
   position: fixed;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   overflow-x: hidden;
   top: 0;
   right: 0;

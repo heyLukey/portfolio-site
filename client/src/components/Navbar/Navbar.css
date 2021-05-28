@@ -8,6 +8,8 @@
   padding-left: 10%;
   padding-right: 10%;
   position: fixed;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   top: 0;
   z-index: 99;
   transition: height 0.5s, background-color 0.25s;
