@@ -1,9 +1,6 @@
 const path = require("path");
 const express = require("express");
 const server = require("./server");
-
-const dotenv = require("dotenv");
-dotenv.config();
 const app = server();
 
 if (process.env.NODE_ENV === "production") {
