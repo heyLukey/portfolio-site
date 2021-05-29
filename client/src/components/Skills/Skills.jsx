@@ -20,7 +20,7 @@ const Skills = () => {
               <div>
                 <h2>Web Developer</h2>
                 <div className="skills-description">
-                  I use the internet alot, so it's only natural I try to create
+                  I use the internet a lot, so it's only natural I try to create
                   part of it!
                 </div>
               </div>
